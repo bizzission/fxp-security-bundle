@@ -15,15 +15,16 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1.0",
-        "symfony/framework-bundle": "^4.3.0",
-        "symfony/security-bundle": "^4.3.0",
-        "fxp/security": "^2.0.0"
+        "fxp/security": "dev-master as 2.0",
+        "symfony/framework-bundle": "^5.0.0",
+        "symfony/security-bundle": "^5.0.0"
     },
     "require-dev": {
-        "symfony/form": "^4.3.0",
-        "symfony/translation": "^4.3.0",
-        "doctrine/doctrine-bundle": "^1.9.0",
-        "doctrine/orm": "^2.6.0"
+        "symfony/form": "^5.0.0",
+        "symfony/translation": "^5.0.0",
+        "doctrine/doctrine-bundle": "^2.1",
+        "doctrine/orm": "^2.7",
+        "phpunit/phpunit": "^9"
     },
     "autoload": {
         "psr-4": { "Fxp\\Bundle\\SecurityBundle\\": "" },
@@ -35,5 +36,19 @@
         "branch-alias": {
             "dev-master": "2.0-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bizzission/fxp-security.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bizzission/fxp-config.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bizzission/fxp-doctrine-extra.git"
+        }
+    ]
 }
